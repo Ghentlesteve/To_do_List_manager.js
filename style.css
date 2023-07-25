@@ -1,0 +1,138 @@
+:root {
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.wrap{
+    background: #0d479a;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.heading {
+    margin: 10px auto 40px auto;
+}
+.heading .title{
+    font-size: 30px;
+    color: #ffff;
+    font-weight: 500;
+    text-align: center;
+}
+.heading .subtitle {
+    font-size: 20px;
+    color: #ffff;
+    font-weight: 300;
+    text-align: center;
+}
+
+.task-manager {
+    min-width: 300px;
+    max-width: 450px;
+    margin: auto;
+}
+
+.search-box, .task-box, .message {
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 4px;
+    margin: 20px 0;
+
+}
+
+.search-box .search {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.search-box input {
+    border-radius: 4px;
+    width: 100%;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-box i.reset {
+    font-size: 24px;
+    height: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.task-box .task {
+    margin: 10px 0;
+}
+
+.task-box li{
+    background-color: #f2f2f2;
+    margin: 10px 0;
+    /* padding: ; */
+    display: flex;
+    justify-content:space-between;
+}
+
+.task-box span {
+    padding: 10px;
+}
+
+.task-box .delete {
+    color: #cfbaba;
+    background-color: #d82148;
+    border-radius: 0 2px 2px 0;
+    height: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.task-box .add {
+    display: flex;
+    margin: 30px 0 10px 0;
+}
+
+.task-box input[type="text"] {
+    border-radius: 4px;
+    width: 100%;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.task-box input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #65c18c;
+    border: none;
+    box-shadow: var(--box-shadow);
+}
+
+.message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message button {
+    border: none;
+    background-color: #1146bf;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+
+}
+
+.hide {
+    display: none !important;
+}
